@@ -1,0 +1,241 @@
+<html>
+    <head>
+        <title>PDF to HTML</title>  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="main.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+	<body style="padding: 200px;">
+		<p style="">66 Viktor, Paquet & le Roux</p>
+		<p>Versicolor. The flowers are classified in terms of four inputs, namely, the sepal-width,
+			sepal-length, petal-width, and petal-length. Figure 2 shows how two input values, namely
+			petal-width and petal-length, are plotted in a Cartesian space. The figure illustrates the
+			usefulness of scatter plots for identifying possible clusters of data points. This tool can
+			convey enormous amounts of information in a compact representation. The user is able
+			to view a data set by making a projection along any two input dimensions. The user uses
+			this tool to obtain a general idea of the contents and quality of the data set</p>
+		<p>      However, from a cooperative learning perspective, the main objective of the data
+			visualization component is to visualize the portion of the data set covered by a particular
+			rule, as described next. For example, Figure 2 depicts how the rule (henceforth referred
+			to as Rule 1)</p>
+		<p>      IF petal-width > 17.50 THEN Iris = Virginica</p>
+		<p>is visualized by means of a scatter diagram. The diagram depicts the petal-width and petallength input dimensions. The scatter diagram shows the Virginica examples covered by
+		the rule (in yellow), together with those examples that were not covered (in black or red).
+		The diagram indicates that the petal-lengths of most Virginica Irises are larger than 46.50.
+		Note that any two of the inputs can be depicted on the X-axis or Y-axis. This may lead
+		to the identification of new clusters that are not described in the rule. For example, a new
+		cluster identifying a relationship between the sepal-widths and petal-widths of Virginicas
+		may be identified, merely by changing the two inputs displayed. This information may
+		then subsequently be used to form a new rule to be used for further training (Viktor, le
+		Roux, & Paquet, 2001).</p>
+		<h3 style="font-weight: bolder;">Visual Cooperative Learning</h3>
+		<p>As stated previously, the CILT system currently incorporates the results of a
+			number of data mining tools that are used for classification. The ViziMine tool imports
+			the rules (or initial knowledge) produced by each tool as an ASCII file and subsequently
+			represents the rules visually as part of the team. This allows the user to easily understand
+			the rule, and provides an interface between the user and the data mining tool.</p>
+		<p>The ViziMine tool thus provides the user with a detailed description of the current
+state of each data mining tool. This interface also allows the user to incorporate his
+knowledge into the system by participating as a learning team member.</p>
+		<p>The visualization of, for example, a C4.5 decision tree, provides a user with an initial
+understanding of the knowledge discovered. However, the ability to drag-and-drop the
+rules onto the data and see the impact immediately allows the user first to understand
+the rules, and then to play with various “what-if” analysis techniques. ViziMine allows
+the user to achieve this by illustrating the rules visually on selected data axes by means
+of a scatter plot of 2D data graphs. This is made possible by the easily comprehensible
+interface, where the user can select a rule, either directly from one of the learners, or from
+the manipulated rules of the domain expert, and then drop it onto the data visualization.
+The portion of the data covered by the rule is subsequently shown on the data, as
+illustrated in Figure 2.
+</p>
+		<p style="font-size: 11px; font-weight: lighter" >Copyright © 2003, Idea Group Inc. Copying or distributing in print or electronic forms without written
+permission of Idea Group Inc. is prohibited.</p>
+		
+		<p style="text-align: right">Cooperative Learning and Virtual Reality-Based Visualization 67</p>
+		<p>The data-items (inputs) of the class that is covered by the rule are displayed in color,
+while the data points of the complementary classes are displayed using round black dots.
+For example, in Figure 2, the data-items of Iris types Setosa and Versicolor are shown as
+round black dots. For the Virginica Irises, the data-items covered by Rule 1 are displayed
+as diamond-shaped yellow dots. The data-items of Virginicas that are not covered by Rule
+1 are indicated through the use of red triangles. This information is used to assess the
+individual rule’s accuracy and coverage. By interacting in this way, the user can
+understand the data that underlies a particular rule constructed by the data mining tool.
+That is, a clearer understanding of the knowledge discovered by the various mining
+toolsthat coexist in the cooperative learning environment is obtained.</p>
+		<p>The user is also able to participate in the learning process by manually combining
+parts of the rules. The Rule Builder models an individual data mining tool’s participation
+during the cooperative learning phase, as discussed in earlier in the chapter. Note that
+the learning team operates in one of two modes:</p>
+		<ol>
+			<li>In automatic mode, the cooperative learning phase is dynamically reiterated until
+no new rules can be created. That is, the rule combining, data generation, and rule
+pruning steps are completed without any feedback from the user. Here, the user acts
+as a spectator, viewing the data mining tools’ cooperation. This is especially useful
+when the user wishes to trace the learning process.</li>
+			<li> In manual mode, the user actively participates in the learning process. He monitors
+and guides the reiteration of new rules and the data generation process. Importantly, the user can promote the cooperation process by removing or adapting
+rules. In this way, the user guides the learning process by incorporating his domain
+knowledge into the system.</li>
+		</ol>
+		<p>The Rule Builder interface is shown in Figure 3. The top part of the interface displays
+the rules as generated by the active learner. The current rule accuracy threshold, which</p>
+		
+		<h5 style="font-style: italic;">Figure 3: Rule Builder interface.</h4>
+		
+		
+		<img src="Screenshot 2024-01-12 142713.png" style="width: 50vw;" />
+			
+		<p style="font-size: 11px; font-weight: lighter" >Copyright © 2003, Idea Group Inc. Copying or distributing in print or electronic forms without written
+permission of Idea Group Inc. is prohibited.</p>
+		
+		<p>68 Viktor, Paquet & le Roux</p>
+		<p>is equal to the average rule accuracy, is displayed next. Here one will recall that this value
+is used to distinguish between high- and low-quality rules. The window also displays
+the newly generated rules. These rules are generated using the rule combination
+algorithm described earlier. In this way, the visualization helps the user to easily
+understand the various rules. For an expert user, the tool also provides an additional
+function allowing the user to add his own rules to the combined knowledge.<br/>
+As has been indicated, the three components essential for understanding a visual
+model are high-quality representation, real-time interaction, and model and data integration. The current implementation of the ViziMine system thus addresses these three
+requirements through the real-time integration of both data visualization and data mining
+result visualization into one.<br/>
+The next section discusses the use of three-dimensional visualization and virtual
+reality as a powerful tool for visualizing the data during the data preprocessing and
+mining processes</p>
+		
+		<h2 style="font-weight: bold;text-align: center;" >THREE-DIMENSIONAL VISUALIZATION,
+VIRTUAL REALITY AND DATA MINING</h2>
+		
+		<p>Three-dimensional visualization has the potential to show far more information than
+two-dimensional visualization, while retaining its simplicity. Current and future research
+efforts will include the ability to model relationships between data in a three-dimensional
+rule grid. This visualization technique quickly reveals the quantity and relative strength
+of relationships between elements, helping to focus attention on important data entities
+and rules. It therefore aids both the data preprocessing and data mining processes.<br/>
+Note that, although the data set and the data context determine the visualization
+technique, the size also plays a very important role. Unfortunately, the more data items
+on the visual graph, the more complex the graph becomes, and thus the user is faced with
+information overload or the so-called “curse of dimensionality.”<br/>
+The next section contains general considerations on Virtual Reality (VR) and data
+mining, but most of the conclusions can be applied to the ViziMine tool as well. The
+ViziMine tool relies on bidimensional visualization, but the importance of each rule can
+be better visualized if three-dimensional visualization is utilized.</p>
+		<h3 style="font-weight: bolder" >Dimensionality Reduction</h3>
+		<p>The curse of dimensionality is not restricted to data mining. This problem can arise
+in information retrieval, and Bayesian and multivariate analysis, to mention just a few.
+Many solutions have been designed, including the principal component analysis (or
+PCA). Under certain conditions, defined formally in Reinsel and Velu (1998), it is possible
+to drastically reduce the number of dimensions, while keeping most of the knowledge by
+performing a PCA on the data. The approach can be summarized as follows. The
+covariance matrix of the data is first computed, and then the corresponding Eigen values
+and vectors are evaluated. Because the covariance matrix is symmetric, the Eigen values
+and vectors can be easily calculated with a deterministic algorithm like the Jacobi method.
+</p>
+		<p style="font-size: 11px; font-weight: lighter" >Copyright © 2003, Idea Group Inc. Copying or distributing in print or electronic forms without written
+permission of Idea Group Inc. is prohibited.</p>
+		<p style="text-align: right;" >Cooperative Learning and Virtual Reality-Based Visualization 69</p>
+		
+		<p>The amplitude of the Eigen values is representative of the importance of a particular
+dimension: the greater the value, the higher the importance. The corresponding Eigen
+vectors provide the basis that spans the subspace. It can be shown that the dimensions
+corresponding to the smallest Eigen values can be neglected. It can also be proved that
+the truncated Eigen decomposition is the decomposition that minimizes the quadratic
+error between the truncated decomposition and the real one.<br/>
+The algorithm can be better understood by considering a bidimensional data
+distribution. Let us suppose that the data are distributed along a regression line. The
+Eigen vectors corresponding to this distribution are respectively oriented parallel and
+perpendicularly to the regression line; the biggest Eigen value corresponds to the Eigen
+vector oriented parallel to the regression line while the smallest Eigen value corresponds
+to the Eigen vector normal to the regression line. This particular case shows a
+fundamental limitation of the PCA method; i.e., in order to reduce the number of
+dimensions, the data must be correlated in the sense that a linear relationship must exist
+between them. Even if such a correlation is common in practice, that constraint
+constitutes an important limitation.<br/>
+Many researchers have tried to overcome the limitation inherent in the linear
+relation by working on a generalization of the previous algorithm. A case of particular
+interest is the piecewise linear relation, which is an immediate generalization of the
+previous case. Instead of assuming a global linear relation, it is assumed that the domain
+can be divided into small domains to which a linear relationship applies. That means that
+the dimensions reduction is performed on a local basis and not on a global basis as in
+the previous case. More details about this method can be found in Chakrabarti and
+Menrotra (2000).<br/>
+In addition to PCA, other methods like neural networks, clustorization, and latent
+semantic indexing can be utilized for dimension reduction. Clustorization allows
+representation of the data by a few archetypes corresponding to representative or typical
+data within the clusters. Neural networks reduce the data set to a limited number of
+classes. The classes can be determined in advance, as it is the case for a multilayer
+perceptron and radial basis neural networks, or determined by the network itself, as in
+the self-organizing Kohonen map.</p>
+		
+		<h2>Three-Dimensional Representation and Visualization
+of Data</h2>
+		<p>Even if the number of dimensions can be reduced, it is well known that the number
+of remaining dimensions is much higher than three. Under these circumstances, it is
+legitimate to ask whether or not there is a clear advantage to increasing the number of
+dimensions from two to three. Doing so has many advantages. It is well known that
+complicated data sets are very difficult to visualize in two dimensions. There are many
+reasons for that. Let us look at three of them: the amount of information that can be
+displayed, the navigation through the data set, and the way data can be represented.<br/>
+Let us suppose that N information elements can be displayed in each dimension.
+If the data are displayed in two dimensions with a volumetric display, it is theoretically
+possible to display up to N<sup>2</sup>
+ information elements. If three dimensions are utilized, it is
+then possible to display up to N3 information elements simultaneously. In practice, the
+</p>
+		
+		<p style="font-size: 11px; font-weight: lighter" >Copyright © 2003, Idea Group Inc. Copying or distributing in print or electronic forms without written
+permission of Idea Group Inc. is prohibited.</p>
+		
+		<p>70 Viktor, Paquet & le Roux</p>
+		<p>number of displayed information elements is much lower, but this simple example
+illustrates the fact that an increase in the number of dimensions dramatically increases
+the bandwidth of the display system.<br/>
+In visual data mining (Fayyad, Grinstein, & Wierse, 2001), the way data are looked
+at or the point of view from which they are considered is very important. A pattern that
+can be evident from a certain point of view might be very difficult to see from a different
+point of view. Consequently, it is very important that the analyst is able to navigate
+through the data in order to determine the best localization for his analysis. It is well
+known that bidimensional representations cannot take into account more that one point
+of view. Of course, it is always possible to reprocess the data in order to show them from
+a different point of view, but in practice that is not convenient. First, it can take a lot of
+time to reprocess the data. Such delays can greatly hamper the analysis process. Second,
+it is very difficult to determine the right point of view if one cannot navigate through the
+data in a non-stepwise manner.<br/>
+The above-mentioned problems can be overcome by using an additional dimension.
+Three-dimensional data can be viewed from any point of view just by navigating through
+them. If the system is properly designed, the navigation can be done in realtime. The
+determination of the right point of view is much easier because the user can walk or fly
+though the data and look at them from any suitable direction. These systems can be
+implemented using a VRML browser, a virtual reality environment, or any suitable
+graphical system.</p>
+		
+		<h2 style="font-weight: bold">Multimedia Standards</h2>
+		<p>In order to represent the data, new multimedia alternatives are becoming available,
+including the X3D and MPEG-4 standards. X3D allows the analyst to define a graphical
+library adapted to the class of problem he is trying to solve. Not only is it possible to
+create templates, but also to define a grammar for a specific class of problems. Once the
+grammar has been defined, it can be reused transparently with various data sets. More
+details about X3D can be found at the Web3D Consortium web site (http://
+www.web3d.com).<br/>
+MPEG-4 is the first, if not the only, real multimedia format. It can transparently
+handle sound, images, videos, and 3-D objects, as well as events, synchronization, and
+scripting languages. MPEG-4 is specially adapted to represent very complex multimedia
+data sets and to facilitate the interaction between those data sets and the analysts. The
+data mining task could be further simplified by using MPEG-7. MPEG-7 is a multimedia
+description standard that can describe the content of any multimedia object. That means
+that MPEG-7 can provide the analyst with additional information. For a video, this
+information could be the duration, the title, and a trailer. Even if the MPEG-4 and MPEG7 standards look very promising, it is too early to draw a conclusion about their
+usefulness in data mining. More details about MPEG-4 and MPEG-7 can be found at http:/
+/mpeg.telecomitalialab.com</p>
+		
+		<h2 style="font-weight: bold;">Three-Dimensional Visualization Techniques</h2>
+		<p>In two dimensions, data representation is limited to bidimensional graphical ele-
+</p>
+		<p style="font-size: 11px; font-weight: lighter" >Copyright © 2003, Idea Group Inc. Copying or distributing in print or electronic forms without written
+permission of Idea Group Inc. is prohibited.</p>
+	</body>
+</html>
